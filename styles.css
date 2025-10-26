@@ -36,7 +36,10 @@ body{
     );
     text-align: center;
     overflow: hidden;
-    background-color: #393741;
+    /* background-color: #393741; */
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
 }
 
 .hexagone .fill{
@@ -50,10 +53,10 @@ body{
     transform: translate(-50%, -50%) scale(0);
     transform-origin: center center;
     filter: drop-shadow(0 6px 24px rgba(0,255,242,0.12));
-    animation: fillShape 3s ease-in-out infinite;
+    animation: fillShape 2s ease-in-out infinite;
 }
 
-@keyframes fillSape{
+@keyframes fillShape{
     0%{
         transform: translate(-50%, -50%) scale(0);
         opacity: 1;
@@ -81,7 +84,111 @@ body{
     animation-delay: 0.5s;
 }
 
+.hexa1 .fill, .hexa2 .fill, .hexa3 .fill, 
+.hexa4 .fill, .hexa5 .fill, .hexa6 .fill{
+    animation-delay: 1s;
+}
 
+.hexa2-1 .fill, .hexa2-2 .fill, .hexa2-3 .fill,
+.hexa2-4 .fill, .hexa2-5 .fill, .hexa2-6 .fill,
+.hexa2-7 .fill, .hexa2-8 .fill, .hexa2-9 .fill,
+.hexa2-10 .fill, .hexa2-11 .fill, .hexa2-12 .fill{
+    animation-delay: 1.5s;
+}
+
+.hexa3-1 .fill, .hexa3-2 .fill, .hexa3-3 .fill,
+.hexa3-4 .fill, .hexa3-5 .fill, .hexa3-6 .fill,
+.hexa3-7 .fill, .hexa3-8 .fill, .hexa3-9 .fill,
+.hexa3-10 .fill, .hexa3-11 .fill, .hexa3-12 .fill,
+.hexa3-13 .fill, .hexa3-14 .fill, .hexa3-15 .fill,
+.hexa3-16 .fill, .hexa3-17 .fill, .hexa3-18 .fill{
+    animation-delay: 2s;
+}
+
+/* position de chaque hexagone */
+
+.center{
+    transform: translate(0, 0);
+    z-index: 10;
+}
+
+/* position des hexagone de la premiere couche */
+
+.hexa1{transform: translate(27px, -42px);}
+
+.hexa2{transform: translate(55px, 0px);}
+
+.hexa3{transform: translate(27px, 42px);}
+
+.hexa4{transform: translate(-27px, 42px);}
+
+.hexa5{transform: translate(-55px, 0px);}
+
+.hexa6{transform: translate(-27px, -42px);}
+
+/* position des hexagone de la seconde couche */
+
+.hexa2-1{transform: translate(54px, -84px);}
+
+.hexa2-2{transform: translate(82px, -42px);}
+
+.hexa2-3{transform: translate(110px, 0px);}
+
+.hexa2-4{transform: translate(82px, 42px);}
+
+.hexa2-5{transform: translate(55px, 84px);}
+
+.hexa2-6{transform: translate(0px, 84px);}
+
+.hexa2-7{transform: translate(-55px, 84px);}
+
+.hexa2-8{transform: translate(-82px, 42px);}
+
+.hexa2-9{transform: translate(-110px, 0px);}
+
+.hexa2-10{transform: translate(-82px, -42px);}
+
+.hexa2-11{transform: translate(-55px, -84px);}
+
+.hexa2-12{transform: translate(0px, -84px);}
+
+/* position des hexagone de la troisieme couche  */
+
+.hexa3-1{transform: translate(-27px, -126px);}
+
+.hexa3-2{transform: translate(27px, -126px);}
+
+.hexa3-3{transform: translate(82px, -126px);}
+
+.hexa3-4{transform: translate(110px, -84px);}
+
+.hexa3-5{transform: translate(137px, -42px);}
+
+.hexa3-6{transform: translate(164px, 0px);}
+
+.hexa3-7{transform: translate(137px, 42px);}
+
+.hexa3-8{transform: translate(110px, 84px);}
+
+.hexa3-9{transform: translate(82px, 126px);}
+
+.hexa3-10{transform: translate(27px, 126px);}
+
+.hexa3-11{transform: translate(-27px, 126px);}
+
+.hexa3-12{transform: translate(-82px, 126px);}
+
+.hexa3-13{transform: translate(-110px, 84px);}
+
+.hexa3-14{transform: translate(-138px, 42px);}
+
+.hexa3-15{transform: translate(-164px, 0px);}
+
+.hexa3-16{transform: translate(-137px, -42px);}
+
+.hexa3-17{transform: translate(-110px, -84px);}
+
+.hexa3-18{transform: translate(-82px, -126px);}
 
 
 
