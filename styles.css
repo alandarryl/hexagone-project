@@ -36,7 +36,6 @@ body{
     );
     text-align: center;
     overflow: hidden;
-    /* background-color: #393741; */
     color: #fff;
     font-size: 20px;
     text-align: center;
@@ -48,8 +47,15 @@ body{
     top: 50%;
     width: 20%;
     height: 20%;
-    background: linear-gradient(180deg,#00fff2,#00c6ff);
-    border-radius: 50%;
+    background: #a5f5fb;
+        clip-path: polygon(
+        50% 0%,
+        100% 25%,
+        100% 75%,
+        50% 100%,
+        0% 75%,
+        0% 25%
+    );
     transform: translate(-50%, -50%) scale(0);
     transform-origin: center center;
     filter: drop-shadow(0 6px 24px rgba(0,255,242,0.12));
